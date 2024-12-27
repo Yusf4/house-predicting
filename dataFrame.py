@@ -39,4 +39,4 @@ plt.show()
 
 # Evaluate the model
 mse = mean_squared_error(y, predictions)
-print("Mean Squared Error:", mse)
+print("MSE:", mse)
