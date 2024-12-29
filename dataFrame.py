@@ -13,7 +13,7 @@ df=pd.DataFrame(data)
 X=np.array(data['Size']).reshape(-1,1)
 y=np.array(data['Price'])
 
-# Visualize the data
+# visualize data
 plt.scatter(X,y,color="red",marker="o")
 plt.title("House Prediction")
 plt.xlabel("size(M)")
