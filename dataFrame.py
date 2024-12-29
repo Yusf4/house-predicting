@@ -30,15 +30,16 @@ print("slope (m)",model.coef_[0])
 print("intercept:",model.intercept_)
 
 # Make predictions and visualize
-predictions = model.predict(X)
-plt.scatter(X, y, color='blue', label='Actual Prices')
-plt.plot(X, predictions, color='red', label='Regression Line')
-plt.xlabel('Size (sq ft)')
-plt.ylabel('Price ($)')
-plt.title('Linear Regression Prediction')
+prediction=model.predict(X)
+plt.scatter(X,y,color='yellow',label='predicted prices')
+plt.plot(X,prediction,color='red',label='Regression line')
+plt.xlabel('size(sq ft)')
+plt.ylabel('price($)')
+plt.title('linear regression prediction')
 plt.legend()
 plt.show()
 
+
 # Evaluate the model
-mse = mean_squared_error(y, predictions)
+mse = mean_squared_error(y, prediction)
 print("MSE:", mse)
